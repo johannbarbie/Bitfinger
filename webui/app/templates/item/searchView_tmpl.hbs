@@ -1,13 +1,28 @@
-<h2 class="form-fee-heading">Search number</h2>
-<form>
-  <div class="form-group">
-    <label for="phoneImput">Phone Number:</label>
-    <input id="phoneInput" type="tel" name="fee" class="form-control" placeholder="+CCXXXX...">
-    <span class="help-block">Enter a phone number to receive the bitcoin address to pay to.</span>
-  </div>
-  <button class="btn btn-inverse" type="submit">Search</button>
-</form>
-<div id="errorAlert" class="alert alert-danger alert-dismissable fade">
-  <button type="button" class="close" aria-hidden="true">&times;</button>
-  <strong>Error!</strong> Not Found!
+<div id="search" class="container">
+    <div class="row">
+    	<div id="logo" class="col-xs-12"></div>	
+    </div>
+    <div class="row">
+    	<div class="col-xs-12">
+    		<div id="searchrow" class="row">
+    			<div class="col-xs-2">
+    			</div>
+		    	<div class="col-xs-6">
+					<form class="form-horizontal">
+					  <div class="control-group form-inline">
+					    <input id="searchInput" type="text" name="search" class="form-control" placeholder="acct:user@service">
+					  </div>
+					</form>
+				</div>
+				<div id="button" class="col-xs-2">
+					<button class="btn btn-inverse" type="submit">Search</button>
+				</div>
+				<div class="col-xs-2">
+    			</div>
+			</div>
+		</div>	
+	</div>
+	<div class="row">
+		<div id="result" class="col-xs-12"></div>	
+	</div>
 </div>

@@ -42,13 +42,13 @@ public class BitfingerServletConfig extends GuiceServletContextListener {
 	public static Injector injector;
 	public static SocketIOServer server;
 	static {
-		basePath = System.getProperty("basePath");
-		resPath = System.getProperty("resPath");
-		captchaPubKey = System.getProperty("captchaPubKey");
-		captchaSecKey = System.getProperty("captchaSecKey");
-		svcPath = System.getProperty("svcPath");
-		svcUser = System.getProperty("svcUser");
-		svcPw = System.getProperty("svcPw");
+		basePath = System.getProperty("bfBasePath");
+		resPath = System.getProperty("bfResPath");
+		captchaPubKey = System.getProperty("bfCaptchaPubKey");
+		captchaSecKey = System.getProperty("bfCaptchaSecKey");
+		svcPath = System.getProperty("bfSrvcPath"); 
+		svcUser = System.getProperty("bfSvcUser");
+		svcPw = System.getProperty("bfSvcPw");
 	}
 	
 	private ServletContext servletContext;
@@ -67,7 +67,7 @@ public class BitfingerServletConfig extends GuiceServletContextListener {
 	        	client.joinRoom(data.getRoom());
 	        	Element e = cache.get(data.getRoom());
 	        	if (null == e || e.isExpired()){
-	        		new AddressRequestor(data.getRoom(),server).start();
+	        		return;
 	        	}else{
 	        		String address = (String)e.getObjectValue();
 	        		server.getRoomOperations(data.getRoom()).sendEvent("found", address);

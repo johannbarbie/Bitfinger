@@ -27,6 +27,9 @@ require.config({
         bootstrap: {
             deps: ['jquery'],
             exports: 'jquery'
+        },
+        webfinger:{
+            exports: 'webfinger'
         }
     },
 
@@ -55,7 +58,8 @@ require.config({
         json2: '../bower_components/require-handlebars-plugin/hbs/json2',
         hbs: '../bower_components/require-handlebars-plugin/hbs',
         lightbox: 'vendor/jquery.lightbox',
-        socketio: '../bower_components/socket.io-client/dist/socket.io'
+        socketio: '../bower_components/socket.io-client/dist/socket.io',
+        webfinger: '../bower_components/webfirst/src/webfinger'
     },
 
     hbs: {

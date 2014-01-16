@@ -272,7 +272,7 @@ module.exports = function (grunt) {
                     amd: true
                 },
                 files: {
-                    '.tmp/scripts/templates.js': ['templates/**/*.hbs']
+                    '.tmp/scripts/templates.js': ['app/templates/**/*.hbs']
                 }
             }
         }

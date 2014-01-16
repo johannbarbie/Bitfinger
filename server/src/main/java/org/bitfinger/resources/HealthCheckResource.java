@@ -23,11 +23,5 @@ public class HealthCheckResource {
 		return rv;
 	}
 	
-	@GET
-	@Path("/fake")
-	public AddressResponse fake(){
-		return new AddressResponse().setAddress("bla");
-	}
-	
 	
 }

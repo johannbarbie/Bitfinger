@@ -1,0 +1,10 @@
+{
+  "subject": "acct:extraterrestrialintelligence@gmail.com",
+  "links":
+  [
+    {
+      "rel": "bitcoin",
+      "href": "bitcoin:19xeDDxhahx4f32WtBbPwFMWBq28rrYVoh"
+    }
+  ]
+}

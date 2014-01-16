@@ -16,7 +16,8 @@
     "mocha": "~1.12.0",
     "chai": "~1.7.2",
     "sinon": "~1.7.3",
-    "socket.io-client": null
+    "socket.io-client": null,
+    "webfirst": "https://github.com/silverbucket/webfinger.js.git"
   },
   "devDependencies": {},
   "directory": "app/bower_components"
