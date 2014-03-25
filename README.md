@@ -10,7 +10,7 @@ The solution can be used in many ways, with CORS headers and DKIM signature prov
 To publish your bitcoin address following the Webfinger standard you need to follow these steps:
 
 ### 1. Create a file 
-Create a file called **webfinger.js** in your Dropbox Public folder.
+Create a file called **webfinger.js** in your Dropbox Public folder with this content:
   ```json
   {
     "subject": "acct:makingabetter@gmail.com",
@@ -23,19 +23,19 @@ Create a file called **webfinger.js** in your Dropbox Public folder.
     ]
   }
   ```
-  make sure to replace email and bitcoin address.
+  make sure to replace email and bitcoin address in the example with yours.
 ### 2. Copy URL
-Copy the public URL of this file
+Copy the public URL of this file.
 ### 3. Send Email
-Send an email from Gmail to **fist@webfist.org** with this content, replacing the link with the link from step 2:
+Send an email from your Gmail account to **fist@webfist.org** with this content:
   ```
   webfist = https://dl.dropboxusercontent.com/u/accountid/webfinger.js
   ```
-  check http://webfist.org/ for details.
+Replace the link with the link from step 2.
 ### 4. Check
-Check http://webfist.org/ with your email address and see if you can get a positive response for your email.
+Check http://webfist.org/ with your Gmail address and see if you can get a positive response.
 
-Check https://bitfinger.org and see if you can get the bitcoin address back an a QR code.
+Check https://bitfinger.org and see if you can get the bitcoin address back as a QR code.
 
 License
 ----
