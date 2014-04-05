@@ -1,7 +1,7 @@
 # Bitfinger
 
 
-[Bitfinger.org](https://bitfinger.rog) is a lookup service for bitcoin addresses. It is based on [Webfinger](https://tools.ietf.org/html/rfc7033), a micro-format to describe human readable identifiers like account@host.org.
+[Bitfinger.org](https://bitfinger.org) is a lookup service for bitcoin addresses. It is based on [Webfinger](https://tools.ietf.org/html/rfc7033), a micro-format to describe human readable identifiers like account@host.org.
 
 ## Instruction
 
