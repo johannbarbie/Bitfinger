@@ -25,7 +25,7 @@ Create a file called **webfinger.js** in your Dropbox Public folder with this co
   ```
   make sure to replace email and bitcoin address in the example with yours.
 ### 2. Copy URL
-Copy the public URL of this file.
+Copy the public URL of this file. It should start like this ```'https://dl.dropboxusercontent.com/...'``` and end with ```.js```. Make sure it's not just the web link, but the actual file.
 ### 3. Send Email
 Send an email from your Gmail account to **fist@webfist.org** with this content:
   ```
