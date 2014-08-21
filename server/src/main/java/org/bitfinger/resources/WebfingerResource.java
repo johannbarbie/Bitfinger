@@ -9,7 +9,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.apache.commons.io.IOUtils;
@@ -25,7 +24,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 @Path(WebfingerResource.PATH)
-@Produces(MediaType.APPLICATION_JSON)
+@Produces("application/jrd+json")
 public class WebfingerResource {
 	public final static String PATH = "/.well-known/webfinger";
 	
