@@ -22,7 +22,7 @@ function( Backbone, Communicator, HeaderView, SearchView) {
 		App.headerRegion.show(new HeaderView());
 		//initialize views
 
-		App.contentRegion.show(new SearchView());
+		App.contentRegion.show(new SearchView({model:new Backbone.Model({resPath:window.opt.resPath})}));
 
 		//start router
 		Communicator.mediator.trigger("APP:START");

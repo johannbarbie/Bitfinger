@@ -13,7 +13,7 @@ function( Backbone, SearchTmpl, webfinger) {
 			console.log('initialize a searchView');
 		},
 		events: {
-            'click button':'handleClick'
+	    'click button1':'handleClick'
         },
         handleResponse: function(err, p){
 			this.$('button').button('reset');
@@ -45,7 +45,6 @@ function( Backbone, SearchTmpl, webfinger) {
         },
         onShow: function(e){
 			this.$('[name="search"]').focus();
-			this.$('#logo').append('<img id="bitfingerLogo" src="'+window.opt.resPath+'/images/logo.png" />');
         }
 	});
 

@@ -1,28 +1,40 @@
 <div id="search" class="container">
     <div class="row">
-    	<div id="logo" class="col-xs-12"></div>	
+	<div id="logo" class="col-sm-12">
+		<img class="ri" src="{{resPath}}/images/logo.png" />
+	</div>
     </div>
     <div class="row">
-    	<div class="col-xs-12">
-    		<div id="searchrow" class="row">
-    			<div class="col-xs-2">
-    			</div>
-		    	<div class="col-xs-6">
-					<form class="form-horizontal">
-					  <div class="control-group form-inline">
-					    <input id="searchInput" type="text" name="search" class="form-control" placeholder="acct:user@service">
-					  </div>
-					</form>
+	<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="input-group">
+					<div class="input-group-btn">
+				      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Action</a></li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">Separated link</a></li>
+					</ul>
+				      </div>
+				  <input type="text" class="form-control" placeholder="user@service">
+				  <div class="input-group-btn">
+				    <button type="button" class="btn btn-default" tabindex="-1">Go!</button>
+				    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+				      <span class="caret"></span>
+				      <span class="sr-only">Toggle Dropdown</span>
+				    </button>
+				    <ul class="dropdown-menu pull-right" role="menu">
+				      <li class="disabled"><a href="#">Email Address</a></li>
+				      <li><a href="#">Cell Number</a></li>
+				    </ul>
+				  </div>
 				</div>
-				<div id="button" class="col-xs-2">
-					<button class="btn btn-inverse" type="submit">Search</button>
-				</div>
-				<div class="col-xs-2">
-    			</div>
-			</div>
-		</div>	
+
+		</div>
 	</div>
 	<div class="row">
-		<div id="result" class="col-xs-12"></div>	
+		<div id="result" class="col-sm-12"></div>
 	</div>
 </div>

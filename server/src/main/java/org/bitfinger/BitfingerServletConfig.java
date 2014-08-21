@@ -91,7 +91,7 @@ public class BitfingerServletConfig extends GuiceServletContextListener {
 			@Provides @Singleton @SuppressWarnings("unused")
 			public SocketIOServer provideSocket(){
 			 	Configuration config = new Configuration();
-			    config.setPort(8081);
+			    config.setPort(8082);
 			    SocketIOServer server = new SocketIOServer(config);
 			    return server;
 			}
